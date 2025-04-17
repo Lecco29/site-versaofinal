@@ -12,6 +12,38 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Correções para overflow horizontal */
+        html, body {
+            overflow-x: hidden;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Ajustes responsivos para imagens */
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        /* Ajustes para containers em mobile */
+        @media (max-width: 768px) {
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+                max-width: 100%;
+            }
+            .row {
+                margin-left: 0;
+                margin-right: 0;
+            }
+            .col-4, .col-6, .col-12 {
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
@@ -47,7 +79,7 @@
     <section id="inicio" class="hero-section">
         <div class="container">
             <div class="hero-content text-white" data-aos="fade-up">
-                <h1 class="display-4 fw-bold">Vistoria Veicular Profissional</h1>
+            <h1 class="display-4 fw-bold">Vistoria Veicular em Herculândia</h1>
                 <p class="lead">Serviços especializados em vistoria para transferência, revistoria e vistoria cautelar</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-center">
                     <a href="#servicos" class="btn btn-primary btn-lg me-3">Nossos Serviços</a>
@@ -185,6 +217,39 @@
                                 <div class="image-overlay">
                                     <div class="overlay-content">
                                         <h4>Nossos Equipamentos</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Nova linha para fotos adicionais -->
+                    <div class="row mt-4">
+                        <div class="col-4">
+                            <div class="image-container" style="height: 200px;">
+                                <img src="imagens/i1 (1).jpeg" alt="Área de Trabalho 1" class="img-fluid rounded shadow mb-4" style="height: 100%; object-fit: cover;">
+                                <div class="image-overlay">
+                                    <div class="overlay-content">
+                                        <h4>Área de Trabalho</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="image-container" style="height: 200px;">
+                                <img src="imagens/i1 (2).jpeg" alt="Área de Trabalho 2" class="img-fluid rounded shadow mb-4" style="height: 100%; object-fit: cover;">
+                                <div class="image-overlay">
+                                    <div class="overlay-content">
+                                        <h4>Área de Atendimento</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="image-container" style="height: 200px;">
+                                <img src="imagens/i1 (3).jpeg" alt="Área de Trabalho 3" class="img-fluid rounded shadow mb-4" style="height: 100%; object-fit: cover;">
+                                <div class="image-overlay">
+                                    <div class="overlay-content">
+                                        <h4>Escritório</h4>
                                     </div>
                                 </div>
                             </div>
